@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeoX Emulator - NeoZuku Studios</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --border-color: #30363d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent-color: #58a6ff;
+            --accent-hover: #1f6feb;
+            --code-bg: #21262d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        h1 span {
+            color: var(--accent-color);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+        }
+
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .badge {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            color: #ffffff;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: #ffffff;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        p, li {
+            margin-bottom: 15px;
+            color: var(--text-primary);
+        }
+
+        ul, ol {
+            padding-left: 25px;
+            margin-bottom: 20px;
+        }
+
+        code {
+            background-color: var(--code-bg);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            color: #ff7b72;
+        }
+
+        pre {
+            background-color: var(--code-bg);
+            border: 1px solid var(--border-color);
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-bottom: 20px;
+        }
+
+        pre code {
+            color: var(--text-primary);
+            background: none;
+            padding: 0;
+        }
+
+        .highlight-box {
+            background-color: rgba(88, 166, 255, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 15px;
+        }
+
+        .faq-question {
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            border-top: 1px solid var(--border-color);
+            padding-top: 20px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1><span>NeoX Emulator</span></h1>
+        <div class="subtitle">Desarrollado con precisión por <strong>NeoZuku Studios</strong></div>
+        <p>Una evolución optimizada, fluida y de alto rendimiento diseñada para entusiastas del entretenimiento digital y arquitecturas de hardware eficientes.</p>
+        
+        <div class="badge-container">
+            <span class="badge">Versión: 1.0.0 Release</span>
+            <span class="badge">Plataforma: Windows x64</span>
+            <span class="badge">Motor Gráfico: Optimizado C++ / Vulkan</span>
+            <span class="badge">Estado: Activo</span>
+        </div>
+    </header>
+
+    <section>
+        <h2>🚀 Introducción al Proyecto</h2>
+        <p>Bienvenido al repositorio oficial de <strong>NeoX Emulator</strong>, un proyecto insignia impulsado por <strong>NeoZuku Studios</strong>. Este software ha sido recompilado, optimizado y customizado desde su núcleo para ofrecer una experiencia de ejecución superior, tiempos de carga reducidos y una interfaz visual completamente renovada y adaptada a las exigencias modernas del usuario.</p>
+        <p>Nuestro equipo de desarrollo ha volcado incontables horas de trabajo en refinar la compilación nativa bajo entornos de desarrollo avanzados en C++, logrando superar cuellos de botella tradicionales y garantizando estabilidad absoluta incluso en configuraciones de hardware de bajo consumo energético.</p>
+        
+        <div class="highlight-box">
+            <strong>Nota de Rendimiento:</strong> NeoX Emulator cuenta con optimizaciones específicas de compilación en paralelo (Release x64) que maximizan el aprovechamiento de procesadores multi-núcleo de gama de entrada y portátiles compactas.
+        </div>
+    </section>
+
+    <section>
+        <h2>⚙️ Características Principales</h2>
+        <ul>
+            <li><strong>Rendimiento Multinúcleo Extremo:</strong> Capacidad de distribuir la carga de procesamiento vectorial de forma inteligente entre los hilos disponibles de la CPU.</li>
+            <li><strong>Interfaz Personalizada NeoZuku:</strong> Una capa visual rediseñada para ofrecer una navegación limpia, minimalista y directa al entretenimiento.</li>
+            <li><strong>Soportes Gráficos Avanzados:</strong> Compatibilidad total con APIs de bajo nivel como Vulkan y OpenGL para garantizar tasas de cuadros por segundo (FPS) estables.</li>
+            <li><strong>Escalado de Texturas por Hardware:</strong> Algoritmos avanzados de post-procesamiento para incrementar la resolución nativa de los elementos visuales en pantallas de alta densidad.</li>
+            <li><strong>Gestión de Controles Flexible:</strong> Soporte plug-and-play para mandos de consola USB, Bluetooth y mapeo personalizado de teclado.</li>
+            <li><strong>Sistema de Estados Guardados Instantáneos:</strong> Guarda y carga tu progreso en cualquier momento exacto con múltiples espacios de memoria rápida.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>💻 Requisitos del Sistema</h2>
+        <p>Para asegurar una experiencia óptima al ejecutar el archivo ejecutable <code>.exe</code> de NeoX Emulator, tu equipo debe cumplir con las siguientes especificaciones técnicas recomendadas:</p>
+        <ul>
+            <li><strong>Sistema Operativo:</strong> Windows 10 u Windows 11 de 64 bits.</li>
+            <li><strong>Procesador (CPU):</strong> Arquitectura x86_64 compatible con instrucciones AVX (Optimizado para procesadores de bajo consumo como la gama Intel N y superiores).</li>
+            <li><strong>Memoria RAM:</strong> Mínimo 4 GB de RAM disponibles (Se recomiendan 8 GB para multitarea fluida).</li>
+            <li><strong>Tarjeta Gráfica (GPU):</strong> GPU integrada o dedicada con soporte para OpenGL 2.0 o Vulkan 1.1 en adelante.</li>
+            <li><strong>Almacenamiento:</strong> 100 MB de espacio libre en disco para la instalación del entorno y archivos de configuración.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🛠️ Guía de Instalación y Primeros Pasos</h2>
+        <p>Poner en marcha tu propio entorno con NeoX Emulator es sumamente sencillo si sigues estos pasos al pie de la letra:</p>
+        <ol>
+            <li><strong>Obtén el Ejecutable:</strong> Asegúrate de haber completado la compilación limpia del proyecto o de ubicar el archivo <code>.exe</code> generado en tu directorio de compilación Release.</li>
+            <li><strong>Organiza tus Directorios:</strong> Crea una carpeta limpia en tu disco principal (por ejemplo, <code>C:\NeoXEmulator</code>) y coloca allí el archivo ejecutable junto con sus dependencias necesarias.</li>
+            <li><strong>Estructura de Carpetas:</strong> Genera una subcarpeta llamada <code>memstick</code> para almacenar de manera ordenada los datos de configuración, partidas guardadas y recursos del sistema.</li>
+            <li><strong>Ejecución Inicial:</strong> Haz doble clic sobre el archivo principal para iniciar la interfaz gráfica por primera vez y verificar que los subsistemas de audio y video respondan correctamente.</li>
+            <li><strong>Configuración de Controles:</strong> Dirígete al menú de ajustes de entrada para configurar tu mando preferido o asignar las teclas del teclado a tu comodidad.</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>⚡ Guía de Optimización para Hardware Modesto</h2>
+        <p>Si estás ejecutando NeoX Emulator en equipos compactos o procesadores de bajo consumo energético (como mini PCs basadas en Intel N100), te recomendamos aplicar los siguientes ajustes en el panel de opciones gráficas:</p>
+        <ul>
+            <li><strong>Backend Gráfico:</strong> Selecciona preferentemente <strong>Vulkan</strong> como API de renderizado principal, ya que reduce drásticamente la sobrecarga en el procesador principal comparado con OpenGL.</li>
+            <li><strong>Resolución de Renderizado:</strong> Mantén el valor en <code>1x o 2x</code> para evitar saturar el ancho de banda de la memoria de video integrada.</li>
+            <li>Salto de Fotogramas (Frameskip): Desactivado por defecto, pero puede ajustarse a <code>1</code> en escenarios donde requieras estabilizar escenas altamente demandantes.</li>
+            <li><strong>Filtro Anisotrópico:</strong> Configúralo en niveles moderados (2x o 4x) para mantener una excelente nitidez visual sin sacrificar rendimiento de procesamiento.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>❓ Preguntas Frecuentes (FAQ) Extensivas</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">1. ¿Qué es exactamente NeoX Emulator?</div>
+            <p>NeoX Emulator es una plataforma de software independiente orientada al procesamiento de entornos multimedia y de entretenimiento, optimizada y reestructurada bajo la marca de desarrollo de NeoZuku Studios para ofrecer una experiencia de usuario altamente personalizada y eficiente.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">2. ¿Quién se encarga del desarrollo y mantenimiento del proyecto?</div>
+            <p>El proyecto es ideado, compilado y mantenido de manera independiente por creadores de software y entusiastas de la programación bajo el sello creativo de NeoZuku Studios.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">3. ¿Por qué se optó por compilar el emulador de forma nativa?</div>
+            <p>La compilación manual a través de entornos de desarrollo como Visual Studio y CMake permite eliminar código innecesario, aplicar parches de rendimiento personalizados y asegurar que el archivo ejecutable final esté perfectamente adaptado a arquitecturas de 64 bits en Windows.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">4. ¿Qué hago si el programa arroja un error al iniciar relacionado con dependencias de SDL3?</div>
+            <p>Este inconveniente común se soluciona asegurándose de que la ruta de desarrollo de SDL3 esté correctamente enlazada mediante la variable de entorno <code>CMAKE_PREFIX_PATH</code> apuntando a la carpeta correspondiente en la raíz del disco (por ejemplo, <code>C:\SDL3</code>).</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">5. ¿Funciona de manera fluida en procesadores de gama de entrada como el Intel N100?</div>
+            <p>Sí, perfectamente. Al compilar la aplicación utilizando optimizaciones de nivel <code>Release</code> y configurando el backend gráfico en Vulkan, el software aprovecha al máximo los núcleos de eficiencia de estos procesadores modernos.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">6. ¿Cómo puedo cambiar el aspecto visual o la identidad gráfica del emulador?</div>
+            <p>Puedes modificar los recursos gráficos internos, logotipos y pantallas de bienvenida reemplazando los assets correspondientes en el código fuente antes de realizar una nueva compilación de la solución en Visual Studio.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">7. ¿Es compatible con mandos genéricos de PC y controles de consola?</div>
+            <p>Absolutamente. NeoX Emulator integra un sistema de detección automática de dispositivos de entrada a través de SDL, permitiendo configurar cualquier pad de control mediante USB o Bluetooth sin necesidad de software de terceros.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">8. ¿Dónde se almacenan las partidas guardadas y las configuraciones de usuario?</div>
+            <p>Por defecto, todos los datos persistentes, perfiles de configuración y estados de juego se guardan dentro de la estructura de carpetas local generada en el directorio de trabajo del emulador (carpeta <code>memstick</code>).</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">9. ¿Qué diferencias existen entre compilar en modo Debug y modo Release?</div>
+            <p>El modo <code>Debug</code> incluye símbolos de depuración adicionales que vuelven la ejecución lenta y pesada, mientras que el modo <code>Release</code> aplica optimizaciones agresivas del compilador de C++ para generar un ejecutable rápido y ligero.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">10. ¿Puedo actualizar el emulador manteniendo mis configuraciones anteriores?</div>
+            <p>Sí. Al compilar una nueva versión del archivo ejecutable <code>.exe</code>, simplemente debes conservar intacta tu carpeta <code>memstick</code> y los archivos de datos para conservar todas tus preferencias y progresos sin pérdida de información.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">11. ¿Qué debo hacer si la compilación se detiene con errores en Visual Studio?</div>
+            <p>Se recomienda realizar una limpieza completa de la caché de CMake, verificar la integridad de las rutas de las librerías dependientes y asegurarse de que la solución esté configurada estrictamente para la plataforma <code>x64</code> en modo <code>Release</code>.</p>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">12. ¿Cómo puedo colaborar o reportar mejoras en el desarrollo del proyecto?</div>
+            <p>Puedes abrir reportes de incidencias, proponer nuevas optimizaciones de código o enviar tus aportes directamente a través del repositorio oficial gestionado por NeoZuku Studios.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 NeoZuku Studios. Todos los derechos reservados.</p>
+        <p>Diseñado para ofrecer alto rendimiento, estabilidad y personalización extrema en arquitecturas modernas.</p>
+    </footer>
+</div>
+
+</body>
+</html>
